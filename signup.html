@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width:device-width,initial-scale=1.0">
+	<title>Sign Up page</title>
+	<link rel="icon" sizes="72x72" href="image/sign up icon.jpg">
+	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image: url('image/Signup page image.jpg');">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+    </div>
+
+    <ul class="nav navbar-nav">  
+      <li><a href="About.html">About</a>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Art Type <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Ceramics</a></li>
+          <li><a href="#">Conceptual art</a></li>
+          <li><a href="#">Drawing</a></li>
+          <li><a href="#">Painting</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Sculpture</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Artist Name <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Andy Warhol</a></li>
+          <li><a href="#">Pablo Picasso</a></li>
+          <li><a href="#">Vincent van Gogh</a></li>
+          <li><a href="#">Leonardo da Vinci</a></li>
+          <li><a href="#">Michelangelo</a></li>
+          <li><a href="#">Henri Matisse</a></li>
+          <li><a href="#">Jackson Pollock</a></li>
+          <li><a href="#">Edvard Munch</a></li>
+          <li><a href="#">Claude Monet</a></li>
+          <li><a href="#">Rene Magritte</a></li>
+          <li><a href="#">Salvador Dalí</a></li>
+          <li><a href="#">Edward Hopper</a></li>
+          <li><a href="#">Frida Kahlo</a></li>
+          <li><a href="#">Yayoi Kusama</a></li>
+        </ul>
+      </li>
+
+      <li><a href="FAQ.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact us</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+
+         <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Joining</a></li>
+          <li><a href="#">E-Learning</a></li>
+          <li><a href="#">Art Contest</a></li>
+          <li><a href="#">Auction</a></li>
+          <li><a href="#">On Going Seminar</a></li>
+        </ul>
+      </li>
+      </ul>  
+  </ul>
+  </div>
+
+</nav>
+    <!--- main content of the webpage starts form here --->
+	<div class="container">
+	  <img src="image/logo.jpeg" class="sign" alt="sign up"><br>
+		
+
+		<!---form here codes for form is started --->
+
+	<div class="col-md-4"></div>
+	<div  class="col-md-4" style="text-align: center;">
+		<form action="Signup.php" method="Post" >	
+			<input type="text" name="fname" class="reg" placeholder="First Name" required><br>
+			<input type="text" name="lname" class="reg" placeholder="Last Name" required><br>
+			<input type="email" name="email" class="reg" placeholder="Email" required>
+			<input type="password" name="password" class="reg" placeholder="Password" required><br>
+			<input type="password" name="repassword" class="reg" placeholder="Confirm Password" required><br>
+		  <p style="color: white"><input type="checkbox" required> I agree with <a href="#" class="info">Terms and Services</a><br> & <a href="#" class="info">Privacy Policy</a></p>
+			<button class="btn">Create Account</button>
+		</form>
+	</div>
+		<!--- ENd of form --->	
+	</div>
+<!---	end of main content of the webpage --->
+</body>
+</html>

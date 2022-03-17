@@ -1,0 +1,697 @@
+ <!--<?php
+  session_start();
+    ?>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Online Art Gallery</title>
+  <link rel="icon" sizes="114x114" href="image/apple-icon-76x76.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+    </div>
+
+    <ul class="nav navbar-nav">  
+      <li><a href="About.html">About</a>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Art Type <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Architecture</a></li>
+          <li><a href="#">Ceramics</a></li>
+          <li><a href="#">Conceptual art</a></li>
+          <li><a href="#">Drawing</a></li>
+          <li><a href="#">Painting</a></li>
+          <li><a href="#">Photography</a></li>
+          <li><a href="#">Sculpture</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Artist Name <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Andy Warhol</a></li>
+          <li><a href="#">Pablo Picasso</a></li>
+          <li><a href="#">Vincent van Gogh</a></li>
+          <li><a href="#">Leonardo da Vinci</a></li>
+          <li><a href="#">Michelangelo</a></li>
+          <li><a href="#">Henri Matisse</a></li>
+          <li><a href="#">Jackson Pollock</a></li>
+          <li><a href="#">Edvard Munch</a></li>
+          <li><a href="#">Claude Monet</a></li>
+          <li><a href="#">Rene Magritte</a></li>
+          <li><a href="#">Salvador Dalí</a></li>
+          <li><a href="#">Edward Hopper</a></li>
+          <li><a href="#">Frida Kahlo</a></li>
+          <li><a href="#">Yayoi Kusama</a></li>
+        </ul>
+      </li>
+
+      <li><a href="FAQ.html">FAQs</a></li>
+      <li><a href="Contact.html">Contact us</a></li>
+     <!-- <?php if(!empty($_SESSION["name"])) { 
+          echo "<li><a>".$_SESSION["name"]."</a></li>";
+          echo "<li><a href='logout.php'>Logout</a></li>";
+         }else{
+        ?>-->
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav">
+
+         <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+         <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Joining</a></li>
+          <li><a href="#">E-Learning</a></li>
+          <li><a href="#">Art Contest</a></li>
+          <li><a href="#">Auction</a></li>
+          <li><a href="#">On Going Seminar</a></li>
+        </ul>
+      </li>
+      </ul>  
+  </ul>
+  </div>
+</nav>
+  <!--<h1>Welcome to online Art Gallery</h1>-->
+<div class="row">
+  <div class="container-fluid">   
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="image/ART4.jpeg" alt="Los Angeles" style="width:100%;  height: 500px; " >
+        <div class="carousel-caption">
+          <h2>Henri Matisse</h2>
+          <p>“Creativity takes courage”</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image/ART2.jpeg" alt="Chicago" style="width:100%;   height: 500px;">
+        <div class="carousel-caption">
+          <h2>Pablo Picasso.</h2>
+          <p>“Every child is an artist...”</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="image/ART3.jpeg" alt="New york" style="width:100%;  height: 500px;">
+        <div class="carousel-caption">
+          <h2>Ralph Waldo Emerson</h2>
+          <p>“Every artist was first an amateur”</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="image/ART1.jpeg" alt="New york" style="width:100%;  height: 500px;">
+        <div class="carousel-caption">
+          <h2>Ansel Adams</h2>
+          <p>“You don't take a photograph, you make it”</p>
+        </div>
+      </div>
+    <div style="position: absolute;top:0; left:0;width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); ">
+      <div style="display: flex;justify-content: center;margin-top: 5%;">
+        <center>
+          <div>
+            <div>
+              <font style="font-size: 40px; color: #ADD8E6;">
+                <h1>Welcome to Online Art Gallery</h1>
+              </font>
+            </div>
+          </div>
+        </center>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+<br>
+<div class="row" id="A">
+<p class="bio1" style="margin: 2% " >An art gallery is a place where one can see and buy artworks by emerging, established or master artists. It's important to keep in mind that a gallery is not a shop, but a meeting point for art lovers.<br>
+There are physical galleries, where exhibitions are held in a physical space, and virtual galleries, where exhibitions are held on the Internet.<br>
+In either of these two types of galleries, one can learn how to start a collection and how to care for artworks. The gallery staff should be prepared to answer questions about the style, technique and quality of the artworks represented. Another way of serving clients is to make available a library with art magazines, books and practical information to help their clients learn about the artworks in their historical or contemporary context.</p>
+</div>
+<br>
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row" id="B" >
+    <div class="col-md-3 col-md-offset-1 well" style="background-color: #008080; margin-top: 4%; border-radius: 6%">
+      <div class="thumbnail">
+        <a href="image/AP1.jpg" target="_blank">
+      <img src="image/AP1.jpg" style="width: 100%;height: 300px">
+        </a>
+      </div>
+    </div>
+
+     <div class="col-md-3 col-md-offset-1 well" style="background-color: #008080; margin-top: 4%; border-radius: 6%">
+      <div class="thumbnail">
+        <a href="image/Art images3.jpg" target="_blank">
+      <img src="image/Art images3.jpg" style="width: 100%;height: 300px">
+        </a>
+      </div>
+     </div>
+
+       <div class="col-md-3 col-md-offset-1 well" style="background-color: #008080; margin-top: 4%; border-radius: 6%">
+        <div class="thumbnail">
+          <a href="image/AP2.jpg" target="_blank">
+        <img src="image/AP2.jpg" style="width: 100%;height: 300px">
+          </a>
+        </div>
+       </div>
+  </div>
+    <div class="row">
+      <div class="col-md-3 col-md-offset-1 well" style="background-color: white; margin-top: 4% ; width: 35%; border: none;">
+      <p>Art galleries exhibit works by artists known by the general public, drive the career of young contemporary artists or recover the name of those artist whom, despite the quality of their work, for historical reasons have been relegated to the background. Sometimes, the work of recuperating an artist or an artistic movement can be at the same level as the work of a museum, therefore, in several occasions the function of the gallery is not exclusively commercial. </p>
+     </div>
+
+     <div class="col-md-3 col-md-offset-1 well" style="background-color: white; margin-top: 4% ;width: 44% ; border: none;" >
+      <p>Art galleries can showcase the history of a particular culture in a visual manner.  As such, this visual history provides a snapshot of what life was like at a particular period of time through the artwork.  For instance, the art may provide information about the people living in a particular time period.  The art may also help to explain the social and political climate at the time the artwork was made.  More importantly though, the art showcases the perspective of any one particular artist during a certain moment in time. In some pieces, the art may be more realistic; however, in other pieces, the artwork may be more symbolic in nature.</p>
+     </div>     
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container-fluid" style="background-color: #F5F5F5">
+  <div class="row">
+      <h4 class="top-artist"><b><em>Top Artist of Our Gallery</em></b></h4>
+  </div>
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 4%; border-radius: 6%">
+      <img src="image/Andy Warhol images.jpg" alt="Andy Warhol" style="width: 100%; height: 150px;">
+         <div class="bio">
+             <h2><b>Andy Warhol</b></h2>
+             <h4>(1928-1987)</h4>
+         </div>
+    </div>
+
+   <div class="col-md-4 col-md-offset-1 well" style="background-color: #FFFAFA; margin-top: 4%; border-radius: 6%; height: 280px;">
+       <p class="bio1">Andy Warhol was a successful magazine and ad illustrator who became a leading artist of the 1960s Pop art movements. He ventured into a wide variety of art forms, including performance art, filmmaking, video installations and writing, and controversially blurred the lines between fine art and mainstream aesthetics. Warhol died on February 22, 1987, in New York City.When he graduated from college with his Bachelor of Fine Arts degree in 1949, Warhol moved to New York City to pursue a career as a commercial artist.It was also at this time that he dropped the "a" at the end of his last name to become Andy Warhol.</p>
+       <a href="https://www.biography.com/artist/andy-warhol" style="text-decoration: none; color: green;">More....</a>
+      </div>
+  </div>
+
+  <div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #FFFAFA; margin-top: 4%; border-radius: 6%; height: 280px">
+       <p class="bio1"><p class="bio1">As a significant influence on 20th-century art, Pablo Picasso was an innovative artist who experimented and innovated during his 92-plus years on earth. He was not only a master painter but also a sculptor, printmaker, ceramics artist, etching artist and writer. His work matured from the naturalism of his childhood through Cubism, Surrealism and beyond, shaping the direction of modern and contemporary art through the decades.It was also at this time that he dropped the "a" at the end of his last name to become Andy Warhol.Although he lived the majority of his adult years in France. </p>
+       <a href="https://www.pablopicasso.org/picasso-biography.jsp" style="text-decoration: none; color: green;">More....</a>
+    </div>
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 4%; border-radius: 6%">
+      <img src="image/Pablo Picasso images.jpg"  alt="Pablo Picasso images" style="width: 100%; height: 150px;">
+         <div class="bio">
+             <h2><b>Pablo Picasso</b></h2>
+             <h4>(1881-1973)</h4>
+         </div>
+    </div>
+  </div>
+     
+
+<div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 4%; border-radius: 6%">
+      <img src="image/Vincent van Gogh images.jpg"  alt="Vincent van Gogh images" style="width: 100%; height: 150px;">
+         <div class="bio">
+             <h2><b>Vincent van Gogh</b></h2>
+             <h4>(1853-1890)</h4>
+         </div>
+    </div>
+
+     <div class="col-md-4 col-md-offset-1 well" style="background-color: #FFFAFA; margin-top: 4%; border-radius: 6%; height: 280px">
+       <p class="bio1">Vincent van Gogh, one of the most well-known post-impressionist artists , for whom color was the chief symbol of expression, was born in Groot-Zundert, Holland on March 30, 1853. Vincent van Gogh was one of the world’s greatest artists, with paintings such as ‘Starry Night’ and ‘Sunflowers’ , though he was unknown until after his death.Vincent was highly emotional, lacked self-confidence and struggled with his identity and with direction.Van Gogh was unsuccessful during his lifetime. He struggled with mental illness and remained poor and virtually unknown throughout his life. He believed that his true calling was to preach the gospel.  </p>
+       <a href="https://www.biography.com/artist/vincent-van-gogh" style="text-decoration: none; color: green;">More....</a>
+      </div>
+  </div>
+
+
+ <div class="row"  >
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #FFFAFA; margin-top: 4%; border-radius: 6%; height: 280px;">
+    <p class="bio1">Leonardo da Vinci was a true genius who graced this world with his presence from April 15, 1452 to May 2, 1519. He is among the most influential artists in history , having left a significant legacy not only in the realm of art but in science as well , each discipline informing his mastery of the other. Da Vinci lived in a golden age of creativity among such contemporaries as Raphael and Michaelangelo, and contributed his unique genius to virtually everything he touched.Like Athens in the age of Pericles, Renaissance Italy is a summit in human history. Today, no name better seems to symbolize Renaissance age than Leonardo da Vinci. </p>
+    <a href="https://www.leonardodavinci.net/" style="text-decoration: none; color: green;">More....</a>
+    </div>
+
+    <div class="col-md-4 col-md-offset-1 well" style="background-color: #F5FFFA; margin-top: 4%; border-radius: 6%">
+      <img src="image/Leonardo da Vinci images.jpg" alt="Leonardo da Vinci images" style="width: 100%; height: 150px;">
+         <div class="bio">
+             <h2><b>Leonardo da Vinci</b></h2>
+             <h4>(1452-1519)</h4>
+         </div>
+    </div>
+  </div>
+<br>
+
+
+
+<div class="container-fluid" style="background-color: white;">
+    <h4 class="art_forms"><i>Different Art forms</h4>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="Oilpastel.html"><img alt="" src="image/Oilpastel art image.jpg" style="height: 370px; width: 350px ">
+                <div class="overlay">Oil Pastel</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="acrylic.html"><img alt="" src="image/acrylic 4.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Acrylic</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="conceptual.html"><img alt="" src="image/Conceptual art image.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Conceptual</div></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="sketch.html"><img alt="" src="image/Sketch art image.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Sketch</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="visual.html"><img alt="" src="image/visual art image.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Visual</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="canvas.html"><img alt="" src="image/Canvas art image.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Canvas</div></a>
+              </div>      
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="abstract.html"><img alt="" src="image/Abstract art image.png" style="height: 370px; width: 350px">
+                <div class="overlay">Abstract</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="mandal.html"><img alt="" src="image/mandal 2.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Mandal</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="drawing.html"><img alt="" src="image/Drawing art image.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Drawing</div></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--
+
+    <div class="container" style="margin-left: 5%" id="A">
+      <div class="container-left">
+        <img class="artist1" src="image/Andy Warhol images.jpg" alt="Andy Warhol images">
+          <div class="bio">
+             <h2><b>Andy Warhol</b></h2>
+             <h4>(1928-1987)</h4>
+          </div>
+      </div>
+      <div class=container-right>
+          <p class="bio1">Andy Warhol was a successful magazine and ad illustrator who became a leading artist of the 1960s Pop art movements. He ventured into a wide variety of art forms, including performance art, filmmaking, video installations and writing, and controversially blurred the lines between fine art and mainstream aesthetics. Warhol died on February 22, 1987, in New York City.</p>
+      </div>
+    </div>
+    <br>
+
+
+     <div class="container" id="A">
+      <div class=container-left2>
+          <p class="bio1">As a significant influence on 20th-century art, Pablo Picasso was an innovative artist who experimented and innovated during his 92-plus years on earth. He was not only a master painter but also a sculptor, printmaker, ceramics artist, etching artist and writer. His work matured from the naturalism of his childhood through Cubism, Surrealism and beyond, shaping the direction of modern and contemporary art through the decades. </p>
+      </div>
+      <div class="container-right2">
+        <img class="artist1" src="image/Pablo Picasso images.jpg" alt="Pablo Picasso images">
+          <div class="bio">
+             <h2><b>Pablo Picasso</b></h2>
+             <h4>(1881-1973)</h4>
+          </div>
+      </div>
+    </div> 
+    <br>
+    <div class="container" id="A">
+      <div class="container-left">
+        <img class="artist1" src="image/Vincent van Gogh images.jpg"  alt="Vincent van Gogh images">
+          <div class="bio">
+             <h2><b>Vincent van Gogh</b></h2>
+             <h4>(1853-1890)</h4>
+          </div>
+      </div>
+      <div class=container-right>
+          <p class="bio1">Vincent van Gogh, one of the most well-known post-impressionist artists, for whom color was the chief symbol of expression, was born in Groot-Zundert, Holland on March 30, 1853.
+          Vincent was highly emotional, lacked self-confidence and struggled with his identity and with direction. He believed that his true calling was to preach the gospel; however, it took years for him to discover his calling as an artist. </p>
+      </div>
+    </div>
+    <br>
+     <div class="container" id="A">
+      <div class=container-left2>
+          <p class="bio1">Leonardo da Vinci was a true genius who graced this world with his presence from April 15, 1452 to May 2, 1519. He is among the most influential artists in history, having left a significant legacy not only in the realm of art but in science as well, each discipline informing his mastery of the other. Da Vinci lived in a golden age of creativity among such contemporaries as Raphael and Michaelangelo, and contributed his unique genius to virtually everything he touched.  </p>
+      </div>
+      <div class="container-right2">
+        <img class="artist1" src="image/Leonardo da Vinci images.jpg" alt="Leonardo da Vinci images">
+          <div class="bio">
+             <h2><b>Leonardo da Vinci</b></h2>
+             <h4>(1452-1519)</h4>
+          </div>
+      </div>
+    </div>
+  </div>
+-->
+
+<br>
+<br>
+<div class="container-fluid" style="background-color: white;">
+    <h4 class="art_forms"><i>Clothing Art of Gallery</i></h4>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/rich rajasthani.jpg" style="height: 370px; width: 350px ">
+                <div class="overlay">Rich Rajasthani</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/Georgette.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Georgette</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/damask.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Damask</div></a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/Satan.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Satan</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/lace.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Lace</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/khadi.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Khadi</div></a>
+              </div>      
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/chiffon.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Chiffon</div></a>
+              </div>          
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/velvet.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Velvet</div></a>
+              </div>
+              <div class="col-md-4" id="trig">
+                <a class="thumbnail" id="op" href="#"><img alt="" src="image/differentclothart/Chenille.jpg" style="height: 370px; width: 350px">
+                <div class="overlay">Chenille</div></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+</div>
+  <br><br>
+
+<div class="container-fluid" style="background-color: white">
+  <div class="row-well" style="margin-top: 2%">
+    <div class="col-md-4">
+      <p style="font-style: normal;font-size: 50px;"><b>Discover the <br> world through <br>original paintings <br> for sale</b></rp></p><br>
+      <button style="font-style: normal;font-size: 30px;background-color: black;color: white">Discover</button>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+      <img src="image/Visual.png" width="70%" >
+        <h4><b>Visual</br>
+        <p class="price"> Rs 2000-3000</b></p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+      <img src="image/Urban.jpg" width="79%" >
+        <h4><b>Urban</br>
+        <p class="price"> Rs 3000-3500</b></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row-well">
+    <div class="col-md-4">
+    <div class="card">
+    <img src="image/Portrait.jpg" style="width: 70%">
+        <h4><b>Portrait</br>
+        <p class="price"> Rs 3500-4000</b></p>
+    </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+    <img src="image/Abstract art.jpeg" style="width: 70%">
+        <h4><b>Abstract<br>
+        <p class="price"> Rs 4000-5000</b></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br><br>
+
+<div class="container-fluid " style="background-color: white">
+     <p style="font-style:normal;font-size: 40px;text-align: center;">Original Fabric Paintings For Sale</p><br>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="image/fabric_sita_ram_canvas.png" alt="Sita Ram Canvas Paintings" style="width:55%"><br>
+      <h4 style="font-style: normal;">Fabric Sita Ram Canvas Paintings<br></h4><h5 style="font-style: normal;">Hindustancreations</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%;" class="OFP"><b>US$ 14.15</b></button>
+    </div>
+
+    <div class="col-md-4">
+    <img src="image/Handmade Painting-Patttachitra.png" alt="Handmade Painting-Pattachitra" style="width:60%;height: 170px;"><br>
+      <h4 style="font-style: normal;">Handmade Painting - Pattachitra<br></h4><h5 style="font-style: normal;">ReverieLifestyles</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%" class="OFP"><b>US$ 30.00</b></button>
+    </div>
+
+    <div class="col-md-4">
+    <img src="image/Kalamkari Canvas Painting.png" alt="Kalamkari Canvas Painting" style="width:55%"><br>
+      <h4 style="font-style: normal;">Kalamkari Canvas Painting<br></h4><h5 style="font-style: normal;">Hindustancreations</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%" class="OFP"><b>US$ 12.45</b></button>
+    </div>
+  </div><br>
+
+  <div class="row">
+     <div class="col-md-4">
+    <img src="image/Radha Krishna painting.png" alt="Radha Krishna painting" style="width:55%"><br>
+      <h4 style="font-style: normal;">Radha Krishna painting<br></h4><h5 style="font-style: normal;">Hindustancreations</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%" class="OFP"><b>US$ 13.17</b></button>
+    </div>
+
+    <div class="col-md-4">
+    <img src="image/Tribal Tesar Fabric.png" alt="Tribal Tesar Fabric" style="width:60%; height: 118px"><br>
+      <h4 style="font-style: normal;">Tribal TAsar Fabric Paintings<br></h4><h5 style="font-style: normal;">Designwear</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%" class="OFP"><b>US$ 10.50</b></button>
+    </div>
+
+    <div class="col-md-4">
+    <img src="image/Silk Fabric Painting.png" alt="Silk Fabric Painting" style="width:60%;height: 118px"><br>
+      <h4 style="font-style: normal;">Silk Fabric Painting<br></h4><h5 style="font-style: normal;">Barauecreations</h5>
+      <button style="font-style: normal;font-size: 15px;width: 30%" class="OFP"><b>US$ 12.87</b></button><br>
+      <button style="float: right;margin-right: 10px;background-color: black"><a href="#" style="text-decoration: none; color: white">Show more...</a></button><br>
+    </div>
+  </div><br>
+</div>
+
+<br><br>
+
+<!--<div class="container" style="height:600px ;background-color: white">
+  <div class="row-well">
+    <div class="col-md-4">
+       <p style=" font-size: 40px; font-family:Helvetica; font-style: normal;margin-left: 25px; "><b>Discover<br> the world<br> through<br> original <br>paintings<br> for sale </b></p>
+        <img src="image/Visual.png" style="width: 50%; margin-left: 25px;">
+        <h2 style="font-style: normal;font-size: 20px; position: absolute;margin-left: 25px;"><b>Visual<br>
+            Rs 2000-3000</b></h2>
+    </div>
+    
+    <div class="col-md-4">
+      <img src="image/Historical art.jpg" alt="Historical Art" style="width: 70%; position: relative;"></a>
+          <h2 style="font-style: normal;font-size: 20px; position: absolute;"><b>Historical and Political<br>
+            Rs 2000-3000</b></h2>
+    </div>
+
+    <div class="col-md-4">
+      <img src="image/Abstract art.jpeg" alt="Abstract Art" style="width: 58%;">
+          <h2 style="font-style: normal;font-size: 20px; position: absolute;"><b>Abstract<br>
+            Rs 3000-4000</b></h2>
+    </div>
+  </div>
+
+  <div class="row-well"></div>
+    <div class="col-md-4">
+      <br><br><br><br>
+      <img src="image/Urban.jpg" alt="Urban Art" style="width: 70%; position: relative;"></a>
+          <h2 style="font-style: normal;font-size: 20px; position: absolute;"><b>Urban<br>
+            Rs 4,500-5000</b></h2>
+    </div>
+
+    <div class="col-md-4">
+      <br><br><br><br>
+      <img src="image/Portrait.jpg" alt="Portrait Art" style="width: 58%;"></a>
+          <h2 style="font-style: normal;font-size: 20px; position: absolute;"><b>Portrait<br>
+            Rs 5000-6000</b></h2> 
+    </div>
+  </div>
+</div>
+<br><br>
+-->
+
+<div class="container-fluid" style="background-color: powderblue">
+  <div class="row-well">
+    <div class="container-left" style="width: 50%">
+      <img src="image/doubt.jpg" alt="Ask Doubt" style="height: 11% ; width: 11% ; border-radius: 50% ; margin-left: 15%"><br><br>
+      <p style="font-size: 25px; color: black"><b>Get free personalized <br>advice from our expert<br>art advisors, 24/7</b></p>
+      <p><a href="#" style="margin-left: 10%; color:grey; font-size: 17px;">Looking for advice?</a><br>
+      <a href="#" style="margin-left: 5%;color:grey; font-size: 17px;">A specially commissioned piece?</a><br>
+      <a href="#" style="color: grey; font-size: 17px;">Discover our online art gallery with free art advisiory!</a></p>
+      <button style="background-color: black ; color: white; margin-left: 5%; font: Helvetica;">SPEAK WITH US DIRECTLY</button>
+      <br><i style="margin-left: 20%">or<br><p> contact us :<a href="#">2019pietcsrajnish132@poornima.org</a></p>
+    </div>
+
+    <div class="container-right2" style="margin-right: 22%">
+      <img src="image/doubt2.jpg" style="width: 205%; " >
+    </div>
+  </div>
+</div>
+
+<br><br>
+<div class="container-fluid" style="background-color: black;">
+<div class="row well" style="background-color: grey;">
+  <div class="col-md-3">
+    <img src="image/artist icon.png" style="margin-left: 10% ; border-radius: 50%; margin-top: 2%" alt="Artist Icon"><br>
+    <a href="#" class="W"><b>Selected artists</b></a>
+    <p class="F">from around the world</p>
+  </div>
+  <div class="col-md-3">
+    <img src="image/delivery icon.png" style="margin-left: 10% ; border-radius: 50%" alt="Artist Icon"><br>
+    <a href="#" class="W"><b>Free shipping globally</b></a>
+    <p class="F">by professionals</p>
+  </div>
+  <div class="col-md-3">
+    <img src="image/return icon.png" style="margin-left: 10% ; border-radius: 60% ; margin-top: 3% " alt="Artist Icon"><br>
+    <a href="#" class="W"><b>Free returns</b></a><br>
+    <p class="F">within 14 days after delivery</p>
+  </div>
+  <div class="col-md-3">
+    <img src="image/secure icon.png" style="margin-left: 10% ; border-radius: 90% ; margin-top: 4.5%" alt="Artist Icon"><br>
+    <a href="#" class="W"><b>Secure payments</b></a>
+    <p class="F">by credit card or bank transfer</p><br>
+  </div>
+</div>
+<p style="text-align: center; color: white; font-style: normal; font-size: 20px;"><b><b>Your online art gallery:buy artworks on R&P art</b></p>
+<p style="color: powdergrey ; text-align: center; margin-left: 10%; margin-right: 10%"><b>Buying art made easy:</b> R&P art is an online gallery for contemporary art that allows collectors and art lovers alike to buy wokrs of art in complete security from nationally recognized artists.From abstract canvases, figurative paintings,drawings or even street art and graffiti, we offer an international selection of work in a variety of styles and techniques. R&P art is also helping emerging artists from around the globe to sell their works to art lovers.</p>
+
+<p style="text-align: center; color: white; font-style: normal; font-size: 20px;"><b>Art for sale online: photographs and paintings can be purchased with guaranteed quality and ease.</b></p>
+<p style="color: powdergrey ; text-align: center; margin-left: 10%; margin-right: 10%">Why buy photographs or paintings online? Because we carefully select artists from around the world using our rigorous guidelines number of exhibitions, artist residencies, awards and inclusion in public and private collections. We make the whole experience ease by taking care of the delivery, the customs and the framing of the work.</p>
+
+<p style="text-align: center; color: white; font-style: normal; font-size: 20px;"><b>R&P art , an online art gallery that brings contemporary artworks to everyone</b></p>
+<p style="color: powdergrey ; text-align: center; margin-left: 10%; margin-right: 10%">R&P art believes that the digital world is an incredible tool for buying art, spreading art around the world and allowing people to purchase pieces that they love, whether it is by an emerging African artist or a more established contemporary French painter or even a rising star of street art.</p><br>
+
+  <div class="col-md-3">
+    <img src="image/logo.jpeg" alt="logo" style="float: center ; border-radius: 20%"><br><br>
+    <b style="color: white ; font-size: 18px; font-style: normal;">Follow us <a href="https://www.facebook.com/kumarrajnish7162"><img src="image/facebook.png" style="height: 10% ; width: 10%"></a> <a href="https://www.instagram.com/rajnishrajan7890/"><img src="image/instagram.svg" style="height: 7% ; width: 7%"></a> <a href="http://www.pinterest.com"><img src="image/pinterest.png" style="height: 7% ; width: 7%"></a>  <a href="https://twitter.com/RajnishRajan20?s=08"><img src="image/twitter.png" style="height: 8% ; width: 8%"></a></b><br><br>
+    <p style="font-style: normal; color:powderblue; font-size: 13px;">&copy 2021 R&P art</p>
+  </div>
+  <div class="col-md-3">
+    <p><b class="Z">Customer service</b><p></p>
+    <a href="Contact.html" class="D">Contact us</a><br>
+    <a href="#" class="D">Legal notices</a><br>
+    <a href="#" class="D">General Terms and Conditions</a><br>
+    <a href="#" class="D">Customer testimonials</a><br>
+    <a href="#" class="D">Offer a Gift Card</a><br>
+    <a href="#" class="D">Get USD$200 off!</a><br>
+    <a href="#" class="D">Free art advisory</a><br>
+    <a href="#" class="D">Commission an artist</a><br>
+    <a href="#" class="D">My profile</a><br>
+    <a href="#" class="D">Art for Offices</a><br>
+    <a href="#" class="D">Art for Interior Designers</a><br>
+    <i style="color: white"><img src="image/telephone icon.png" style="height: 5% ; width: 5% ;"> 7050460619</i>
+  </div>
+
+  <div class="col-md-3">
+    <p><b class="Z">Who are we?</b></p>
+    <a href="About.html" class="D">About us</a><br>
+    <a href="#" class="D">Our artists</a><br>
+    <a href="#" class="D">Magazine</a><br>
+    <a href="#" class="D">The team</a><br>
+    <a href="#" class="D">Our selection criteria</a><br>
+    <a href="FAQ.html" class="D">FAQ</a><br>
+    <a href="#" class="D">Jobs</a><br>
+  </div>
+      
+  <div class="col-md-3">
+    <p><b class="Z">Are you an artist?</b></p>
+    <a href="#" class="D">How to join R&P art?</a><br>
+    <a href="#" class="D">Log in for artists(R&P artists only)</a><br>
+    <a href="#" class="D">Art Galleries</a><br><br>
+    <p><b style="font-size: 18px;font-style: normal; color: #EE25">Artists in focus:</b><p>
+    <a href="#" class="D">Pablo Picasso</a><br>
+    <a href="#" class="D">Leonardo da Vinci</a><br>
+    <a href="#" class="D">Vincent van Gogh</a><br>
+    <a href="#" class="D">Edvard Munch</a><br>
+    <a href="#" class="D">Salvador Dalí</a><br>
+  </div>
+</div>
+</div>
+</body>
+</html>

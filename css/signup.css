@@ -1,0 +1,98 @@
+body{
+	background-image: url('image/login page image.jpg');
+	/*no-repeat center center fixed;*/
+	/*background-color: #7FFFD4;*/
+	background-size: cover;
+	font-family: sans-serif;
+}
+
+.sign{
+	   display: block;
+	   margin-left: auto;
+       margin-right: auto;
+	   margin-top: 10px;
+	   width: 150px;
+	   border-radius: 80px;
+	 }
+
+/*main content of the webpage*/
+
+.container{
+			width: 258px;
+			overflow: hidden;
+			padding: 10px 16px;
+			border-radius: 4px;
+			text-align: center;
+			margin: auto;
+			margin-top: 0px;
+		  }
+
+.tb{  
+	  width: 87px;
+	  padding: 8px 16px;
+	  margin: 8px 0;
+	  box-sizing: border-round;
+	  border:2px solid white;
+	  border-radius: 4px;
+   }
+.reg{
+		 width: 212px;
+	     padding: 8px 16px;
+	     margin: 8px 0;
+	     box-sizing: border-round;
+	     border:2px solid white;
+	     border-radius: 4px;
+	}
+
+.info{
+		color: tomato;
+	 }
+.btn{
+		 font-weight: bold;
+		 width: 245px;
+		 padding: 10px 15px;
+		 margin: 2px 0;
+		 box-sizing: border-round;
+         border:2px solid orange;
+		 border-radius: 4px;
+		 background-color: orange;
+	   }
+
+.btn:hover{
+			   background-color: grey;
+			 }
+/*
+hr{
+	width: 80%;
+}
+
+.fb{
+	padding: 0.5rem 2rem;
+	color: #fff;
+	background-color: #4267B2;
+	border: none;
+	border-radius: 5px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.container input{
+	padding: 0.5rem;
+	width: 70%;
+}
+
+.container input[type=checkbox]{
+	width: auto;
+}
+
+.btn{
+	padding: 1rem;
+	background-color: #2ecc71;
+	font-size: 1rem;
+	width: 50%;
+	border-radius: 7px;
+	border: none;
+}
+*/
